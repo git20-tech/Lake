@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lake Effect</title>
+    <!--Lato Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Cormorant Garamond Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Main content goes here -->
+    <section class="header-menu">
+        <nav>
+            <h3>Lake Effect Roastery</h3>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Get in Touch 
+            </h1>
+            <h3>We'd love to hear from you. Stop by, call, or send us a message. </h3>
+        </div>
+    </section>
+
+    <!--------- Top picks section ---------->
+
+    <section class="contact-section">
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+            <h2>Visit Us</h2>
+
+            <div class="contact-info">
+                <h4>Address</h4>
+                <p>Street<br>City, State, Pincode</p>
+
+                <h4>Phone</h4>
+                <p>xxxxxxxxxx</p>
+
+                <h4>Email</h4>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=xxx@gmail.com" target="_blank" rel="noopener noreferrer">xxx@gmail.com</a></p>
+
+                <h4>Hours</h4>
+                <p>Monday-Sunday</p>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-right">
+            <h2>Send Us a Message</h2>
+
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <input type="email" placeholder="Email address" required>
+
+                <textarea rows="5" placeholder="Enter your question or message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- contact us section-->
+
+        <section class="footer">
+            <h3>Lake Effect Roastery</h3>
+            <p>123 Coffee Lane, Oswego, NY 13126 | (555) 123-4567 | <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@lakeviewcoffeeroastery.com" target="_blank" rel="noopener noreferrer">info@lakeviewcoffeeroastery.com</a> | <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showmenu() {
+                navLinks.style.right = "0";
+            }
+            function hidemenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+</body>
+
+</html>

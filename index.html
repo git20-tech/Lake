@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lake Effect</title>
+    <!--Lato Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Cormorant Garamond Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    <style>
+        .text-box h3 {
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main content goes here -->
+    <section class="header">
+        
+        <nav>
+            <h3 style="letter-spacing: 1px;">Lake Effect Roastery</h3>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Roasted with Passion,<br>
+                Served with Soul
+
+            </h1>
+            <h3>Freshly roasted specialty coffee in the heart of Oswego </h3>
+            <a href="menu.html" class="hero-btn">View Our Menu</a>
+            <a href="events.html" class="hero-btn2">See Upcoming Events</a>
+        </div>
+    </section>
+
+    <!--------- Top picks section ---------->
+
+    <section class="top-picks">
+        <h1>Our Top Picks This Season</h1>
+        <div class="row">
+            <div class="top-pick-col">
+                <img src="images/ey.png" alt="Ethiopian Yirgacheffe">
+                <div class="layer">
+                    <h3>Ethiopian Yirgacheffe</h3>
+                    <p>Bright, floral notes with a smooth finish</p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+            <div class="top-pick-col">
+                <img src="images/hbd.png" alt="House Blend Dark Roast">
+                <div class="layer">
+                    <h3>House Blend Dark Roast</h3>
+                    <p>Bold and rich with chocolate undertones</p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+            <div class="top-pick-col">
+                <img src="images/iced.png" alt="Iced Caramel Latte">
+                <div class="layer">
+                    <h3>Iced Caramel Latte</h3>
+                    <p>Sweet, creamy, and perfectly refreshing</p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--- Our story sectiom-->
+        <section class="our-story">
+            <div class="row">
+                <div class="story-col">
+                    <h1>Our Story</h1>
+                    <p>At Lakeview Coffee Roastery, we believe every cup tells a story. Since our founding, we've been
+                        dedicated to sourcing the finest beans from around the world and roasting them to perfection
+                        right here in Oswego. Our passion for quality and community drives everything we do, from the
+                        careful selection of our beans to the warm atmosphere we create for our guests.
+                    </p>
+                    <a href="contact.html" class="hero-btn3">Learn More About Us</a>
+                </div>
+                <div class="story-col">
+                    <img src="images/story.png" alt="Lake Effect Roastery Interior">
+                </div>
+            </div>
+        </section>
+
+        <!--whats happening section -->
+        <section class="whats-happening">
+            <h1>What's Happening at Lake Effect</h1>
+
+            <div class="happening-row"> 
+
+                <div class="happening-col">
+                    <h4> Every Friday,5-8pm</h4>
+                    <h2>Friday Specials</h2>
+                    <p>Join us for exclusive coffee blends and special treats available only on Friday evenings.</p>
+                    <a href="events.html" class="card-btn">View All Events</a>
+                </div>
+
+                <div class="happening-col">
+                    <h4> Date TBD</h4>
+                    <h2>Coffee Tasting Workshop</h2>
+                    <p>Discover the art of coffee tasting with our expert roasters.</p>
+                    <a href="events.html" class="card-btn">View All Events</a>
+                </div>
+
+            </div> 
+        </section>
+        <section class = "get-directions">
+            <div class="row">
+                <div class="directions-col">
+                    <h1>Visit Us - Oswego,NY</h1>
+                </div>
+            <div class="directions-col">
+                   <h1>Mon- Sun 7am-8pm</h1> 
+                </div>
+            </div>
+            <a href="https://www.google.com/maps/place/123+Coffee+Lane,+Oswego,+NY+13126" class="hero-btn3" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        </section>
+    
+
+
+        <!-- contact us section-->
+        
+        <section class="footer">
+            <h3>Lake Effect Roastery</h3>
+            <p>123 Coffee Lane, Oswego, NY 13126 | (555) 123-4567 | <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@lakeviewcoffeeroastery.com" target="_blank" rel="noopener noreferrer">info@lakeviewcoffeeroastery.com</a> | <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showmenu() {
+                navLinks.style.right = "0";
+            }
+            function hidemenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+</body>
+
+</html>

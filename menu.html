@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lake Effect</title>
+    <!--Lato Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Cormorant Garamond Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Main content goes here -->
+    <section class="header-menu">
+        <nav>
+            <h3>Lake Effect Roastery</h3>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Roastery Special Menu
+            </h1>
+            <h3>Explore our carefully crafted selection of specialty drinks and fresh roasted beans </h3>
+            <a href="menu.html" class="hero-btn2-selected">Hot Drinks</a>
+            <a href="iced.html" class="hero-btn2">Iced Drinks</a>
+            <a href="best.html" class="hero-btn2">Bestsellers</a>
+            <a href="packs.html" class="hero-btn2">Coffee Packs</a>
+        </div>
+    </section>
+
+    <!--------- Top picks section ---------->
+
+    <section class="top-picks-menu">
+        <div class="row">
+            <div class="top-pick-col">
+                <img src="images/ey.png" alt="Ethiopian Yirgacheffe">
+                <div class="layer">
+                    <h3>Ethiopian Yirgacheffe</h3>
+                    <p>Bright, floral notes with a smooth finish <br> <b>$12.37</b> </p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+            <div class="top-pick-col">
+                <img src="images/hbd.png" alt="House Blend Dark Roast">
+                <div class="layer">
+                    <h3>House Blend Dark Roast</h3>
+                    <p>Bold and rich with chocolate undertones <br> <b>$10.67</b></p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+            <div class="top-pick-col">
+                <img src="images/iced.png" alt="Iced Caramel Latte">
+                <div class="layer">
+                    <h3>Iced Caramel Latte</h3>
+                    <p>Sweet, creamy, and perfectly refreshing <br> <b>$11.97</b></p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="top-pick-col">
+                <img src="images/grid.png" alt="Ethiopian Yirgacheffe">
+                <div class="layer">
+                    <h3>COMING SOON </h3>
+                    <p> <br> <b>$12.37</b> </p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+            <div class="top-pick-col">
+                <img src="images/grid.png" alt="House Blend Dark Roast">
+                <div class="layer">
+                    <h3>COMING SOON</h3>
+                    <p> <br> <b>$10.67</b></p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+            <div class="top-pick-col">
+                <img src="images/grid.png" alt="Iced Caramel Latte">
+                <div class="layer">
+                    <h3>COMING SOON</h3>
+                    <p> <br> <b>$11.97</b></p>
+                    <a href="menu.html" class="card-btn">See Full Menu</a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- contact us section-->
+
+        <section class="footer">
+            <h3>Lake Effect Roastery</h3>
+            <p>123 Coffee Lane, Oswego, NY 13126 | (555) 123-4567 | <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@lakeviewcoffeeroastery.com" target="_blank" rel="noopener noreferrer">info@lakeviewcoffeeroastery.com</a> | <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showmenu() {
+                navLinks.style.right = "0";
+            }
+            function hidemenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+</body>
+
+</html>
